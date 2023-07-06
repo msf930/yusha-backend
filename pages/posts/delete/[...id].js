@@ -24,7 +24,7 @@ export default function  DeletePostPage() {
     }
     return(
         <Layout>
-            <h1 >Do you really want to delete: "{postInfo?.title}"?</h1>
+            <h1 >Do you really want to delete: `{postInfo?.title}`?</h1>
             <div className="flex gap-2">
                 <button className="btn-red" onClick={deletePost}>Yes</button>
                 <button className="btn-default" onClick={goBack}>No</button>
