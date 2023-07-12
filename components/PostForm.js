@@ -89,7 +89,7 @@ export default function  PostForm({
                 {date &&
                     (<label>Post date set to: {date}</label>)}
                 <input
-                    type="date"
+                    type="datetime-local"
                     //placeholder="month day year ex. May 12 2023"
                     value={date}
                     onChange={ev => setDate(ev.target.value)}/>
