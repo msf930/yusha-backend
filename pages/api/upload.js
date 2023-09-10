@@ -4,7 +4,7 @@ import fs from "fs";
 import mime from 'mime-types';
 import {mongooseConnect} from "@/lib/mongoose";
 
-const bucketName = 'yusha-web';
+const bucketName = 'yusha-next';
 
 export default async function handle(req,res) {
 
@@ -18,7 +18,7 @@ export default async function handle(req,res) {
     });
     console.log('length:', files.file.length);
     const client = new S3Client({
-        region: 'us-east-2',
+        region: 'us-west-2',
         credentials: {
             accessKeyId: process.env.S3_ACCESS_KEY,
             secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
